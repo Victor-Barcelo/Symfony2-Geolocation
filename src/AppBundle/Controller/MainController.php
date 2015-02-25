@@ -49,7 +49,7 @@ class MainController extends Controller
      */
     public function mainAction()
     {
-        //No session, we need to retrieve user geolocation
+        //If there's no session we need to retrieve user geolocation
         if (!$this->get('session')->has('latitude')) {
             return $this->redirect($this->generateUrl('getHTML5Geolocation'));
         }
