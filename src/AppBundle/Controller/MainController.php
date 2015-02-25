@@ -28,7 +28,7 @@ class MainController extends Controller
      * @Route("/", name="setUserGeolocation")
      * @Method("POST")
      */
-    public function setUserGeolocation(Request $request)
+    public function setUserGeolocationAction(Request $request)
     {
         $latitude = $request->request->get('latitude');
         $longitude = $request->request->get('longitude');
