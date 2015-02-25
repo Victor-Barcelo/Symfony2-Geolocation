@@ -1,0 +1,8 @@
+{% extends 'AppBundle:Main:layout.html.twig' %}
+{% block title %}Main{% endblock %}
+
+{% block main %}
+    <div id="map-canvas">
+        {{ google_map(map) }}
+    </div>
+{% endblock %}

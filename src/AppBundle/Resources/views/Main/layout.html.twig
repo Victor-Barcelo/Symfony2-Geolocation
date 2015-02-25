@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+        <title>{% block title %}{% endblock %}</title>
+        {% include 'AppBundle:Main:js&css.html.twig' %}
+        {% block head %}{% endblock %}
+    </head>
+
+    <body>
+        <main>
+            {% block main %}{% endblock %}
+        </main>
+    </body>
+
+</html>
