@@ -8,6 +8,8 @@
 
     # Fix the bundles folder
     RewriteRule ^bundles/(.*)$ /web/bundles/$1  [QSA,L]
+    RewriteRule ^js/(.*)$ /web/js/$1  [QSA,L]
+    RewriteRule ^css/(.*)$ /web/css/$1  [QSA,L]
 
     RewriteCond %{REQUEST_FILENAME} !-f
     # Change below before deploying to production
